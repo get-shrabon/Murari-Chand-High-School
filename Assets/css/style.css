@@ -22,6 +22,9 @@
 .p_bg_color {
   background-color: var(--p-color);
 }
+.p_color{
+    color: var(--p-color);
+}
 .p-150{
     padding-top: 150px;
     padding-bottom: 150px;
@@ -287,4 +290,16 @@ color: white;
 }
 /*************************************************
  Hero Section Style end 
+ *************************************************/
+
+/*************************************************
+ Student Resources Section Style Start 
+ *************************************************/
+ .student_resources .swiper-slide img{
+    width: 150px;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+ }
+/*************************************************
+ Student Resources Section Style end 
  *************************************************/

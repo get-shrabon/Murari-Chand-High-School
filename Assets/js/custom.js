@@ -31,3 +31,30 @@ function myFunction() {
         prevEl: ".swiper-hero-left",
       },
     });
+
+    // Student Resources Slider
+var swiper = new Swiper(".studentResources", {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-stu-next",
+    prevEl: ".swiper-stu-prev",
+  },
+  breakpoints: {
+    400: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  },
+});
