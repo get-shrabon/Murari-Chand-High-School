@@ -22,21 +22,30 @@
 .p_bg_color {
   background-color: var(--p-color);
 }
-.p_color{
-    color: var(--p-color);
+.p_color {
+  color: var(--p-color);
 }
-.p-150{
-    padding-top: 150px;
-    padding-bottom: 150px;
+.p-150 {
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
-.p-80{
-    padding-top: 80px;
-    padding-bottom: 80px;
+.p-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-.divider{
-    width: 100%;
-    height: 3px;
-    background-color: var(--p-color);
+.divider {
+  width: 100%;
+  height: 3px;
+  background-color: var(--p-color);
+}
+.center-no-reapeat-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.shape-bg{
+  background-image:linear-gradient(90deg, #e7cc5304, #e7cc5311), url("../Images/bg-line\ shape.png");
+  width: 100%;
 }
 /* Custom Button */
 .p_btn {
@@ -74,7 +83,25 @@
   transform: translateX(20px);
   visibility: hidden;
 }
-
+/* Custom Image Gellary */
+.gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+.gallery_item img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
 
 /***************************************************************** navbar All Css Here ******************************************************************/
 
@@ -266,27 +293,27 @@ nav ul li a:hover:after {
   position: relative;
 }
 .hero_arrows {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 50%;
-    padding: 0 30px;
-    z-index: 10;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 45%;
+  padding: 0 30px;
+  z-index: 10;
 }
 .hero_arrows a {
-width: 40px;
-height: 40px;
-display: flex !important;
-align-items: center;
-justify-content: center;
-background-color: #e7cc5379;
-text-decoration: none;
-transition: .4s all;
-color: white;
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7cc5379;
+  text-decoration: none;
+  transition: 0.4s all;
+  color: white;
 }
-.hero_arrows a:hover{
-    background-color: #e7cd53;
-    color: grey;
+.hero_arrows a:hover {
+  background-color: #e7cd53;
+  color: grey;
 }
 /*************************************************
  Hero Section Style end 
@@ -295,11 +322,76 @@ color: white;
 /*************************************************
  Student Resources Section Style Start 
  *************************************************/
- .student_resources .swiper-slide img{
-    width: 150px;
-    box-shadow: var(--shadow);
-    border-radius: 10px;
- }
+.student_resources .swiper-slide img {
+  width: 150px;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+}
 /*************************************************
  Student Resources Section Style end 
+ *************************************************/
+/*************************************************
+ Quick Links Section Style Start 
+ *************************************************/
+.quick1 {
+  background-image: linear-gradient(#e7cc53b3, #e7cc53b3),
+    url("../Images/Hero-Slider-Images/Slide\ 1.webp");
+  transition: 1s all !important;
+  color: white;
+}
+.quick1:hover {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.414),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../Images/Hero-Slider-Images/Slide\ 1.webp");
+  border-top-right-radius: 30px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.quick2 {
+  background-image: linear-gradient(
+      rgba(0, 0, 255, 0.648),
+      rgba(0, 0, 255, 0.648)
+    ),
+    url("../Images/Hero-Slider-Images/Slide\ 2.webp");
+  transition: 1s all !important;
+  color: white;
+}
+.quick2:hover {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.414),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../Images/Hero-Slider-Images/Slide\ 2.webp");
+  border-top-right-radius: 30px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.quick3 {
+  background-image: linear-gradient(
+      rgba(128, 128, 128, 0.625),
+      rgba(128, 128, 128, 0.625)
+    ),
+    url("../Images/Hero-Slider-Images/BG.jpg");
+  transition: 1s all !important;
+  color: white;
+}
+.quick3:hover {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.414),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../Images/Hero-Slider-Images/BG.jpg");
+  border-top-right-radius: 30px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.quick1, .quick2, .quick3{
+height: 300px;
+padding-bottom: 30px;
+}
+
+/*************************************************
+ Quick Links Section Style end 
  *************************************************/

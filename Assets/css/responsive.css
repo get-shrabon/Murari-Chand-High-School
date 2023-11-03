@@ -20,6 +20,12 @@
   .hero_arrows {
     display: none;
   }
+  .flex-nowrap{
+    flex-wrap: wrap !important;
+  }
+  .row{
+    gap: 15px;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .close_btn {
