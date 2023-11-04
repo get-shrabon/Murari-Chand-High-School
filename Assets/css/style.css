@@ -33,6 +33,9 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.border {
+  border: 1px solid var(--p-color) !important;
+}
 .divider {
   width: 100%;
   height: 3px;
@@ -43,8 +46,9 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.shape-bg{
-  background-image:linear-gradient(90deg, #e7cc5304, #e7cc5311), url("../Images/bg-line\ shape.png");
+.shape-bg {
+  background-image: linear-gradient(90deg, #e7cc5304, #e7cc5311),
+    url("../Images/bg-line\ shape.png");
   width: 100%;
 }
 /* Custom Button */
@@ -65,16 +69,10 @@
   align-items: center;
   gap: 5px;
   overflow: hidden;
-  transition: 0.4s all;
+  transition: 0.4s all !important;
+  position: relative;
 }
-.p_btn:hover {
-  background-image: linear-gradient(
-    10deg,
-    #e7cd53 20px,
-    rgba(0, 0, 255, 0.959) 20%,
-    grey 1px
-  );
-}
+
 .p_btn i {
   transform: translateX(0px);
   transition: 0.3s all;
@@ -83,6 +81,45 @@
   transform: translateX(20px);
   visibility: hidden;
 }
+.p_btn:hover {
+  background-image: linear-gradient(
+    10deg,
+    rgba(0, 0, 255, 0.959) 20px,
+    #e7cd53 20%,
+    grey
+  );
+}
+
+/* Teacher Button */
+.teacher_btn {
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: var(--p-color);
+  position: relative;
+  z-index: 2;
+  transition: 0.3s all;
+}
+.teacher_btn:hover {
+  color: black;
+}
+.teacher_btn::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--p-color);
+  border-radius: 5px;
+  z-index: -1;
+  transition: 0.3s all;
+}
+.teacher_btn:hover::after {
+  width: 100%;
+}
+
 /* Custom Image Gellary */
 .gallery {
   display: grid;
@@ -101,6 +138,13 @@
   height: 100%;
   object-fit: cover;
   width: 100%;
+  transition: 0.3s all;
+}
+.gallery_item {
+  overflow: hidden;
+}
+.gallery_item a img:hover {
+  scale: calc(1.2);
 }
 
 /***************************************************************** navbar All Css Here ******************************************************************/
@@ -346,7 +390,6 @@ nav ul li a:hover:after {
       rgba(0, 0, 0, 0.5)
     ),
     url("../Images/Hero-Slider-Images/Slide\ 1.webp");
-  border-top-right-radius: 30px;
   transition: all 0.3s ease-in-out 0s;
 }
 .quick2 {
@@ -365,7 +408,6 @@ nav ul li a:hover:after {
       rgba(0, 0, 0, 0.5)
     ),
     url("../Images/Hero-Slider-Images/Slide\ 2.webp");
-  border-top-right-radius: 30px;
   transition: all 0.3s ease-in-out 0s;
 }
 .quick3 {
@@ -384,14 +426,153 @@ nav ul li a:hover:after {
       rgba(0, 0, 0, 0.5)
     ),
     url("../Images/Hero-Slider-Images/BG.jpg");
-  border-top-right-radius: 30px;
   transition: all 0.3s ease-in-out 0s;
 }
-.quick1, .quick2, .quick3{
-height: 300px;
-padding-bottom: 30px;
+.quick1,
+.quick2,
+.quick3 {
+  height: 300px;
+  padding-bottom: 30px;
 }
 
 /*************************************************
  Quick Links Section Style end 
+ *************************************************/
+
+/*************************************************
+ Feature Section Style Start 
+ *************************************************/
+.feature_box {
+  position: relative;
+  background-color: white;
+}
+.feature_box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -100;
+  transition: 0.3s all;
+  border-radius: 10px;
+}
+.feature_box:hover::before {
+  background-color: var(--p-color);
+  transform: rotate(-5deg);
+}
+/*************************************************
+ Feature Section Style end 
+ *************************************************/
+
+/*************************************************
+ Teacher's Section Style Start 
+ *************************************************/
+.teacher_box {
+  transition: 0.3s all;
+}
+.teacher_box:hover {
+  transform: translateY(-10px);
+}
+/*************************************************
+ Teacher's Section Style end 
+ *************************************************/
+
+/*************************************************
+CTA Section Style Start 
+ *************************************************/
+.cta_container {
+  background-image: url("../Images/CTA-Section.jpg");
+  margin-bottom: -100px;
+  position: relative;
+}
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 40px;
+  width: 40%;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+/*************************************************
+CTA Section Style end 
+ *************************************************/
+
+/*************************************************
+ Footer Style Start 
+ *************************************************/
+footer {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 255, 0.577),
+      rgba(0, 0, 255, 0.777)
+    ),
+    url("../Images/Footer-BG.jpg");
+  color: white;
+  z-index: -1;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s all;
+  font-weight: 500;
+}
+footer ul li a:hover {
+  color: var(--p-color);
+  margin-left: 5px;
+}
+.footer_contact a {
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid var(--p-color);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.footer_contact a i {
+  z-index: 2;
+}
+.footer_contact a:after {
+  content: "";
+  width: 0%;
+  height: 0%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s all;
+  z-index: -0;
+}
+.footer_contact a:hover::after {
+  background-color: #e7cd53;
+  width: 100%;
+  height: 100%;
+}
+.pt-200 {
+  padding-top: 200px;
+}
+/*************************************************
+ Footer Style end 
  *************************************************/
