@@ -26,6 +26,9 @@
   .row{
     gap: 15px;
   }
+  .ml6{
+    width: 100%;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .close_btn {
@@ -43,5 +46,8 @@
   }
   .hero_p {
     width: 70% !important;
+  }
+    .ml6{
+    width: 85%;
   }
 }
