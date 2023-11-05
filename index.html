@@ -700,13 +700,15 @@
       <!------------------------------------------
              CTA Section Start
             ------------------------------------ -->
-        <section class="cta_container container center-no-reapeat-cover p-80 rounded text-white">
-<h1 class="ml6">
-  <span class="text-wrapper">
-    <span class="letters">Murari Chand High School, Fatapur</span>
-  </span>
-</h1>
-        </section>
+      <section
+        class="cta_container container center-no-reapeat-cover p-80 rounded text-white"
+      >
+        <h1 class="ml6">
+          <span class="text-wrapper">
+            <span class="letters">Murari Chand High School, Fatapur</span>
+          </span>
+        </h1>
+      </section>
       <!------------------------------------------
              CTA Section End
             ------------------------------------ -->
@@ -724,7 +726,7 @@
                   width="100px"
               /></a>
             </div>
-            <p>
+            <p class="mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
               eveniet aliquid nesciunt incidunt rem ullam? Voluptatum deserunt
               harum minus fugit.
@@ -745,20 +747,23 @@
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
             <h4 class="fw-bold mb-4">Our Contact Us</h4>
-            <a
-              class="text-decoration-none text-white d-block"
-              href="callto:0170000000"
-              ><span class="fw-bold">Phone:</span>
-              <span><i class="fa-solid ms-2 p_color fa-phone"></i></span>
-              0170000000</a
-            >
-            <a
-              class="text-decoration-none text-white d-block mt-2"
-              href="maillto:example@gmail.com"
-              ><span class="fw-bold">Email:</span>
-              <span><i class="fa-regular ms-2 p_color fa-envelope"></i></span>
-              example@gmail.com</a
-            >
+            <p class="d-flex gap-2">
+              <span><i class="fa-solid p_color fa-phone"></i></span>
+              <span class="fw-bold">Phone:</span>
+              <span><a class=" d-block text-white" href="callto:0170000000">0170000000</a></span>
+            </p>
+            <p class="d-flex gap-2">
+              <span><i class="fa-regular p_color fa-envelope"></i></span>
+              <span class="fw-bold">Email:</span>
+              <span><a class=" d-block text-white" href="mailto:example@gmail.com">example@gmail.com</a></span>
+            </p>
+            <p class="d-flex gap-2">
+              <span>
+                <i class="fa-solid p_color fa-location"></i>
+                </span
+              ><span class="fw-bold">Address:</span>
+              <span>Fatepur, Biswasmbarpur, Sunamgong</span>
+            </p>
             <div class="d-flex gap-3 align-items-center footer_contact mt-2">
               <a class="text-decoration-none d-block" href=""
                 ><i class="fa-brands text-white fa-linkedin"></i
@@ -775,10 +780,10 @@
             </div>
           </div>
         </div>
-        <hr>
+        <hr />
       </div>
     </footer>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./Assets/js/custom.js"></script>
@@ -793,6 +798,5 @@
     ></script>
     <!-- Lightbox -->
     <script src="./Assets/lightbox/lightbox-plus-jquery.js"></script>
-   
   </body>
 </html>

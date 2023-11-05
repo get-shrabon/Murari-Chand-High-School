@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&family=Young+Serif&display=swap");
 
+
 :root {
   --p-color: #e7cd53;
   --shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -491,6 +492,7 @@ CTA Section Style Start
   font-weight: 900;
   font-size: 40px;
   width: 40%;
+ font-family: 'Young Serif', serif;
 }
 
 .ml6 .text-wrapper {
