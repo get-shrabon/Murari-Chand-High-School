@@ -469,6 +469,11 @@ nav ul li a:hover:after {
 /*************************************************
  Teacher's Section Style Start 
  *************************************************/
+ .teacher__container{
+  background-image: url('../Images/teacher-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+ }
 .teacher_box {
   transition: 0.3s all;
 }
@@ -487,26 +492,13 @@ CTA Section Style Start
   margin-bottom: -100px;
   position: relative;
 }
-.ml6 {
-  position: relative;
-  font-weight: 900;
-  font-size: 40px;
-  width: 40%;
- font-family: 'Young Serif', serif;
-}
-
-.ml6 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
-}
-
-.ml6 .letter {
-  display: inline-block;
-  line-height: 1em;
+.cta__btn{
+  background-color: white;
+  width: fit-content;
+  padding: 7px 15px;
+  border-left: 2px solid var(--p-color);
+  color: var(--p-color);
+  font-weight: 600;
 }
 /*************************************************
 CTA Section Style end 
@@ -578,3 +570,20 @@ footer ul li a:hover {
 /*************************************************
  Footer Style end 
  *************************************************/
+
+ /* Home Page CSS END */
+
+ /******************************************************************* About Us Page CSS Here ********************************************************************************/
+.about__hero{
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.414),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../Images/Hero-Slider-Images/BG.jpg");
+}
+.overview_container{
+    background-image: url('../Images/teacher-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
