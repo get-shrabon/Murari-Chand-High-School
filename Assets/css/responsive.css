@@ -35,6 +35,15 @@
    justify-content: start !important;
    gap: 20px;
   }
+  .fc .fc-toolbar-title{
+    width: 100% !important;
+    white-space: nowrap;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .fc .fc-toolbar{
+    flex-direction: column !important;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .close_btn {

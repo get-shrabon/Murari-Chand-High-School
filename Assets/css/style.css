@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&family=Young+Serif&display=swap");
 
-
 :root {
   --p-color: #e7cd53;
   --shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -469,11 +468,11 @@ nav ul li a:hover:after {
 /*************************************************
  Teacher's Section Style Start 
  *************************************************/
- .teacher__container{
-  background-image: url('../Images/teacher-bg.png');
+.teacher__container {
+  background-image: url("../Images/teacher-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
- }
+}
 .teacher_box {
   transition: 0.3s all;
 }
@@ -492,7 +491,7 @@ CTA Section Style Start
   margin-bottom: -100px;
   position: relative;
 }
-.cta__btn{
+.cta__btn {
   background-color: white;
   width: fit-content;
   padding: 7px 15px;
@@ -571,10 +570,10 @@ footer ul li a:hover {
  Footer Style end 
  *************************************************/
 
- /* Home Page CSS END */
+/* Home Page CSS END */
 
- /******************************************************************* About Us Page CSS Here ********************************************************************************/
-.about__hero{
+/******************************************************************* About Us Page CSS Here ********************************************************************************/
+.about__hero {
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.414),
@@ -582,8 +581,78 @@ footer ul li a:hover {
     ),
     url("../Images/Hero-Slider-Images/BG.jpg");
 }
-.overview_container{
-    background-image: url('../Images/teacher-bg.png');
+.overview_container {
+  background-image: url("../Images/teacher-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
+}
+/******************************************************************* Gallery Page CSS Here ********************************************************************************/
+.gallery__hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.414),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../Images/Hero-Slider-Images/Slide\ 3.webp");
+}
+.gallery_container {
+  background-image: url("../Images/teacher-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/******************************************************************* Teachers Page CSS Here ********************************************************************************/
+.teacher__hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.414),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../Images/Hero-Slider-Images/Slide\ 4.jpeg");
+}
+/******************************************************************* Calender Page CSS Here ********************************************************************************/
+.calender__hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.414),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../Images/Hero-Slider-Images/Slide\ 5.webp");
+}
+#calendarJs a {
+  text-decoration: none;
+  color: black;
+}
+.fc .fc-daygrid-day-top {
+  justify-content: center;
+  align-items: center !important;
+}
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: #e7cd53;
+}
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: 1px solid var(--p-color);
+}
+table thead {
+  background-color: #8c750c;
+}
+table thead th a {
+  color: white !important;
+}
+/******************************************************************* Contact Page CSS Here ********************************************************************************/
+.contact__hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.414),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../Images/Hero-Slider-Images/Slide\ 2.webp");
+}
+.contact__info{
+  box-shadow:
+   rgb(2, 22, 248, 0.5) 5px 5px,
+   rgba(2, 22, 248, 0.3) 10px 10px,
+    rgba(2, 22, 248, 0.2) 15px 15px,
+     rgba(2, 22, 248, 0.1) 20px 20px,
+      rgba(2, 22, 248, 0.05) 25px 25px;
 }

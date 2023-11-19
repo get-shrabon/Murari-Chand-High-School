@@ -15,24 +15,23 @@ function myFunction() {
   }
 }
 
-
 // Hero Sliders
 
-    var swiper = new Swiper(".heroSlide", {
-      spaceBetween: 30,
-      loop: true,
-      effect: "fade",
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-hero-right",
-        prevEl: ".swiper-hero-left",
-      },
-    });
+var swiper = new Swiper(".heroSlide", {
+  spaceBetween: 30,
+  loop: true,
+  effect: "fade",
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-hero-right",
+    prevEl: ".swiper-hero-left",
+  },
+});
 
-    // Student Resources Slider
+// Student Resources Slider
 var swiper = new Swiper(".studentResources", {
   loop: true,
   autoplay: {
@@ -57,4 +56,12 @@ var swiper = new Swiper(".studentResources", {
       spaceBetween: 50,
     },
   },
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var calendarEl = document.getElementById("calendarJs");
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: "dayGridMonth",
+  });
+  calendar.render();
 });
