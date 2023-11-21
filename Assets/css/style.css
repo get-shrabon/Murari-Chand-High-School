@@ -36,6 +36,9 @@
 .border {
   border: 1px solid var(--p-color) !important;
 }
+.border-right{
+ border-right: 2px dashed blue;
+}
 .divider {
   width: 100%;
   height: 3px;
